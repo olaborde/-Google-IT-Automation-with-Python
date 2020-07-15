@@ -1,0 +1,20 @@
+
+thon --> pattern to macth on
+grep thon /usr/share/dict/words
+
+# match regardles of case
+grep -i thon /usr/share/dict/words
+
+Reserved characters
+. |--> a dot matches any character
+    grep l.rts /usr/share/dict/words
+^ |--> the caret or circumflex indicates the beginning of line
+    grep ^fruit /usr/share/dict/words
+$ |--> the dollar sign indicates the end of line
+    grep cat$ /usr/share/dict/words
+
+
+Character classes are written inside square brackets and let us list the characters we want to match inside of those brackets    
+
+Capturing groups
+Portions of the pattern that are enclosed in parentheses
